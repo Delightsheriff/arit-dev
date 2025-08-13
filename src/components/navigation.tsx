@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,9 +12,9 @@ export function Navigation() {
   const navLinks = [
     { name: "Home", href: "#" },
     { name: "Community", href: "#community" },
-    { name: "Mentorship", href: "#mentorship" },
+    { name: "Hackathon", href: "#hackathon" },
     { name: "Live Sessions", href: "#sessions" },
-    { name: "FAQ", href: "#faq" },
+    { name: "Shop", href: "#shop" },
   ];
 
   useEffect(() => {
@@ -38,9 +39,15 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <h1 className="font-heading text-2xl font-bold arit-text">
+            {/* <h1 className="font-heading text-2xl font-bold arit-text">
               Arit Circle
-            </h1>
+            </h1> */}
+            <Image
+              src="/logo.webp"
+              alt="Arit Circle Logo"
+              width={150}
+              height={50}
+            />
           </div>
 
           {/* Desktop Navigation */}
