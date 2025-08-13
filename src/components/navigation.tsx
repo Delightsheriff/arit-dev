@@ -34,7 +34,10 @@ export function Navigation() {
   }, [isMenuOpen]);
 
   return (
-    <nav className="relative z-50 px-6 py-4 lg:px-8" ref={menuRef}>
+    <nav
+      className="relative z-50 px-6 py-4 lg:px-8 border-b border-gray-200 pb-2"
+      ref={menuRef}
+    >
       <div className="mx-auto max-w-7xl">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -51,7 +54,7 @@ export function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8 ">
             {navLinks.map((link) => (
               <a
                 key={link.name}

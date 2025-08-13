@@ -1,4 +1,4 @@
-// import { Footer } from "@/components/footer";
+import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
 import { Navigation } from "@/components/navigation";
 
@@ -7,7 +7,7 @@ export default function Home() {
     <div className="min-h-screen arit-bg">
       <Navigation />
       <HeroSection />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
