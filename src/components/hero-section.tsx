@@ -38,8 +38,8 @@ export function HeroSection() {
           </p>
         </div> */}
 
-        <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold arit-text leading-tight fade-in-up">
-          From Learning to Earning,<span className="block">Together</span>
+        <h1 className="font-heading text-2xl md:text-4xl lg:text-7xl font-bold arit-text text-header leading-tight fade-in-up">
+          From Learning to Earning,Together
         </h1>
 
         <div className="mt-8 fade-in-up fade-in-up-delay-1">
@@ -49,7 +49,7 @@ export function HeroSection() {
         </div>
 
         <div className="mt-8 max-w-2xl mx-auto fade-in-up fade-in-up-delay-2">
-          <p className="font-sans text-lg md:text-xl arit-text leading-relaxed">
+          <p className="font-sans text-lg arit-text leading-relaxed">
             The Queen Arit Circle is a welcoming, no-fluff community for early
             and mid-career techies and those still learning, led by your tech
             aunty <strong>Arit</strong>. We help you master the practical skills
@@ -62,7 +62,7 @@ export function HeroSection() {
         {/* Main CTA */}
         <div className="mt-12 fade-in-up fade-in-up-delay-3">
           <AnimatedButton
-            className="arit-accent-bg text-white hover:bg-pink-600 transition-all duration-300 "
+            className="arit-accent-bg text-white hover:bg-pink-600 transition-all duration-300 px-6 py-5 w-60 "
             onClick={() =>
               window.open("https://proxy.nas.io/queenaritcircle", "_blank")
             }
