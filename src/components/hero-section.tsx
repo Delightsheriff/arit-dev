@@ -5,29 +5,23 @@ import { AnimatedButton } from "./animated-button";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 lg:px-6 overflow-hidden">
-      <div className="floating-shapes">
+    <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-6 overflow-hidden">
+      {/* <div className="floating-shapes">
         <div className="floating-shape"></div>
         <div className="floating-shape"></div>
         <div className="floating-shape"></div>
         <div className="floating-shape"></div>
         <div className="floating-shape"></div>
-      </div>
+      </div> */}
 
       <div className="geometric-background">
         <div className="dot-pattern"></div>
         <div className="circuit-lines"></div>
       </div>
-      <div className="relative z-10 mx-auto max-w-4xl text-center">
+      <div className="relative z-10 mx-auto max-w-4xl text-center px-2">
         {/* Main Headline */}
-
-        <div className="geometric-background">
-          <div className="dot-pattern"></div>
-          <div className="circuit-lines"></div>
-        </div>
-
-        <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold arit-text text-header leading-tight fade-in-up">
-          From Learning to Earning,Together
+        <h1 className="font-heading text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-bold arit-text text-header leading-tight fade-in-up break-words">
+          From Learning to Earning, Together
         </h1>
 
         <div className="mt-8 fade-in-up fade-in-up-delay-1">
@@ -37,7 +31,7 @@ export function HeroSection() {
         </div>
 
         <div className="mt-8 max-w-2xl mx-auto fade-in-up fade-in-up-delay-2">
-          <p className="font-sans text-lg arit-text leading-relaxed">
+          <p className="font-sans text-base sm:text-lg arit-text leading-relaxed break-words">
             The Queen Arit Circle is a welcoming, no-fluff community for early
             and mid-career techies and those still learning, led by your tech
             aunty <strong>Arit</strong>. We help you master the practical skills
