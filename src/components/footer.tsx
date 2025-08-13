@@ -10,7 +10,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
-            <h3 className="text-2xl font-bold text-white mb-4">Arit Circle</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Arit Developer Circle
+            </h3>
             <p className="text-gray-300 mb-6">
               Empowering tech professionals through mentorship, community, and
               career growth.

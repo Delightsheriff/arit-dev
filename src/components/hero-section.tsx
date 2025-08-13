@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { AnimatedButton } from "./animated-button";
 
 export function HeroSection() {
   return (
@@ -29,9 +30,9 @@ export function HeroSection() {
         {/* Description */}
         <div className="mt-8 max-w-2xl mx-auto fade-in-up fade-in-up-delay-2">
           <p className="font-sans text-lg md:text-xl arit-text leading-relaxed">
-            The <strong className="font-bold">Arit</strong> Developer Circle is
-            a supportive, no-fluff space to get you unstuck. Led by our tech
-            aunty <strong className="font-bold">Arit</strong>, we deliver the
+            The Arit Developer Circle is a supportive, no-fluff space to get you
+            unstuck. Led by our tech aunty{" "}
+            <strong className="font-bold">Arit</strong>, we deliver the
             spicy-honest feedback and insider strategies you need to push
             forward, stand out, and build a career you&apos;re proud of. This is
             where your real growth begins.
@@ -40,13 +41,15 @@ export function HeroSection() {
 
         {/* Main CTA */}
         <div className="mt-12 fade-in-up fade-in-up-delay-3">
-          <Button
-            size="lg"
-            className="arit-accent-bg text-white hover:bg-pink-600 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 text-lg px-8 py-4 group"
+          <AnimatedButton
+            className="arit-accent-bg text-white hover:bg-pink-600 transition-all duration-300 "
+            onClick={() =>
+              window.open("https://proxy.nas.io/queenaritcircle", "_blank")
+            }
           >
             Join the Circle Today
             <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-          </Button>
+          </AnimatedButton>
         </div>
       </div>
     </section>
