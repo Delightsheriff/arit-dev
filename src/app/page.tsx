@@ -1,3 +1,10 @@
+import { Navigation } from "@/components/navigation";
+
 export default function Home() {
-  return <p>The Arit Developer Circle</p>;
+  return (
+    <div className="min-h-screen arit-bg">
+      <Navigation />
+      <p>The Arit Developer Circle</p>
+    </div>
+  );
 }
