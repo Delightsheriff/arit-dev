@@ -44,7 +44,7 @@ export function Footer() {
             © 2025 Arit Developer Circle. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm mt-4 md:mt-0">
-            Built by the Arit Developer Circle Team
+            Built by The Queen Arit Circle Team
           </p>
         </div>
       </div>

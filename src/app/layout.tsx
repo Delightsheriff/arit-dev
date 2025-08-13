@@ -15,9 +15,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Arit Developer Circle - Your Tech Journey, Accelerated",
+  title: "The Queen Arit Circle - Your Tech Journey, Accelerated",
   description:
-    " The Arit Developer Circle is a supportive, no-fluff space for techies  of all experience levels to push forward and stand out.",
+    "The Queen Arit Circle is a supportive, no-fluff space for techies of all experience levels to push forward and stand out.",
 };
 
 export default function RootLayout({

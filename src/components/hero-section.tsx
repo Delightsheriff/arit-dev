@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { AnimatedButton } from "./animated-button";
 
@@ -16,26 +15,47 @@ export function HeroSection() {
 
       <div className="relative z-10 mx-auto max-w-4xl text-center">
         {/* Main Headline */}
-        <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold arit-text leading-tight fade-in-up">
+        {/* <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold arit-text leading-tight fade-in-up">
           Your Tech Journey, <span className="block">Accelerated</span>
-        </h1>
+        </h1> */}
 
         {/* Sub-headline */}
-        <div className="mt-8 fade-in-up fade-in-up-delay-1">
+        {/* <div className="mt-8 fade-in-up fade-in-up-delay-1">
           <p className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold arit-accent">
             Build. Practice. Get Hired.
           </p>
-        </div>
+        </div> */}
 
         {/* Description */}
-        <div className="mt-8 max-w-2xl mx-auto fade-in-up fade-in-up-delay-2">
+        {/* <div className="mt-8 max-w-2xl mx-auto fade-in-up fade-in-up-delay-2">
           <p className="font-sans text-lg md:text-xl arit-text leading-relaxed">
-            The Arit Developer Circle is a supportive, no-fluff space to get you
+            The Queen Arit Circle is a supportive, no-fluff space to get you
             unstuck. Led by our tech aunty{" "}
             <strong className="font-bold">Arit</strong>, we deliver the
             spicy-honest feedback and insider strategies you need to push
             forward, stand out, and build a career you&apos;re proud of. This is
             where your real growth begins.
+          </p>
+        </div> */}
+
+        <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold arit-text leading-tight fade-in-up">
+          From Learning to Earning,<span className="block">Together</span>
+        </h1>
+
+        <div className="mt-8 fade-in-up fade-in-up-delay-1">
+          <p className="font-heading text-2xl md:text-3xl lg:text-4xl font-semibold arit-accent">
+            Build real skills. Grow your confidence. Thrive in Tech.
+          </p>
+        </div>
+
+        <div className="mt-8 max-w-2xl mx-auto fade-in-up fade-in-up-delay-2">
+          <p className="font-sans text-lg md:text-xl arit-text leading-relaxed">
+            The Queen Arit Circle is a welcoming, no-fluff community for early
+            and mid-career techies and those still learning, led by your tech
+            aunty <strong>Arit</strong>. We help you master the practical skills
+            that advance your career forward: interviewing, leadership,
+            collaboration, storytelling, and more. Whatever your role in tech,
+            you don&apos;t have to figure it out on your own.
           </p>
         </div>
 

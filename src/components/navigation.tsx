@@ -42,14 +42,14 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            {/* <h1 className="font-heading text-2xl font-bold arit-text">
-              Arit Circle
-            </h1> */}
             <Image
-              src="/logo.webp"
+              src="/logo.png"
               alt="Arit Circle Logo"
-              width={150}
+              width={50}
               height={50}
+              priority
+              quality={100}
+              style={{ objectFit: "contain" }}
             />
           </div>
 
