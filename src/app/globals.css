@@ -224,3 +224,190 @@
     transform: translateY(0);
   }
 }
+
+/* Gradients */
+
+/* Added pulse animation for CTAs */
+.pulse-on-hover {
+  transition: all 0.3s ease;
+}
+
+.pulse-on-hover:hover {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Added gradient text animation */
+.gradient-text {
+  background: linear-gradient(45deg, #1e293b, #ec4899, #1e293b);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Adding geometric background illustrations */
+.geometric-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.geometric-background::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(236, 72, 153, 0.6),
+    transparent
+  );
+  transform: rotate(15deg);
+  animation: slideIn 2s ease-out;
+}
+
+.geometric-background::after {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  right: 8%;
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(30, 41, 59, 0.4),
+    transparent
+  );
+  transform: rotate(-25deg);
+  animation: slideIn 2s ease-out 0.5s both;
+}
+
+.dot-pattern {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(
+    circle,
+    rgba(236, 72, 153, 0.3) 1px,
+    transparent 1px
+  );
+  background-size: 15px 15px;
+  animation: fadeInScale 1.5s ease-out 1s both;
+}
+
+.circuit-lines {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 120px;
+  height: 80px;
+  opacity: 0.3;
+  animation: drawLines 3s ease-out 1.5s both;
+}
+
+.circuit-lines::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: #ec4899;
+  transform-origin: left;
+  animation: expandWidth 1s ease-out 2s both;
+}
+
+.circuit-lines::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 58px;
+  width: 2px;
+  height: 40px;
+  background: #ec4899;
+  transform-origin: top;
+  animation: expandHeight 1s ease-out 2.5s both;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100px) rotate(15deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(15deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes drawLines {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes expandWidth {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes expandHeight {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
